@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+/** Line 3
+  OC CIS 155 Web Development I
+  Build on Concepts Project #2
+
+  Author: Bryan Hyland
+  Date:   27 Jul 18
+
+  Filename: layout.css
+Line 11 **/
+
+/** Body Section **/
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+
+  width: 90%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div#majorContainer {
+  min-height: 100%;
+  position: relative; /* Line 29 for grading */
+}
+
+h1#heading1
+{
+  display: block; /* Line 34 for grading */
+  height: 100%;
+  margin-top: 0px;
+  margin-left: 30px;
+}
+
+#heading1 > br
+{
+  display: none;
+}
+
+/* Auto sizes the logo image for all devices */
+
+img.logo {
+  display: block;
+  float: right;
+  width: 8%;
+  height: auto;
+}
+
+/* Sets up the intro class and its elements */
+section.intro
+{
+  padding-top: 3%;
+  padding-bottom: 5%;
+  background-color: black;
+}
+
+h3.intro
+{
+  font-family: Yoshi, cursive;
+  font-size: 2em;
+  text-align: center;
+}
+p.intro
+{
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: Yoshi;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* Projects id so that all pages are layed out the same */
+
+section#projects {
+  padding-top: 1%;
+  background-color: black;
+}
+
+section#projects h2 {
+  display: block;
+  margin-right: 250px;
+  float: right;
+}
+
+section#projects ul, section#projects li {
+  margin-bottom: 0px;
+}
+
+section#projects blockquote {
+  clear: both; /* Line 95 for grading */
+  display: block;
+  float: left; /* Line 97 for grading */
+  margin-bottom: 0px;
+  width: 50%;
+}
+
+section#projects blockquote.bottom {
+    padding-bottom: 3%;
+  }
+
+section#projects figure {
+  display: block;
+  margin-top: 8%;
+  margin-bottom: 0px;
+  margin-left: 60%;
+  margin-right: 10%;
+}
+
+section#projects figure.bottom {
+  padding-bottom: 3%;
+}
+
+div.BG {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.contactMe
+{
+  padding-left: 150px;
+  padding-right: 150px;
+  background-color: black;
+}
+
+p.contactMe
+{
+  padding-top: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/* Line 137 Starts footer for grading */
+footer {
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+  text-align: center;
+} /* Line 143 Ends footer for grading */
+
+/** Navigation Section **/
+/* Head Navigation Class */
+div#navigation {
+  clear: both;
+}
+
+.headNav {
+  display: block;
+  float: left;
+}
+nav.headNav {
+  height: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+nav.headNav > ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav.headNav > ul > li {
+  display: block;
+  float: left;
+  margin-left: 7px;
+}
+
+nav.headNav > ul > li > a {
+  align-content: center;
+  padding-top: 10px;
+  padding-right: 8px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+/* Portfolio Links class */
+ul.portfolioLinks {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 20px;
+}
+
+ul.portfolioLinks > li > a {
+  align-content: center;
+}
+
+.portfolioLinks a[href*="resume"]:hover {
+  color: silver;
+}

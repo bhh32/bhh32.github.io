@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Jura-Regular;
+    src: url('../fonts/Jura-Regular.ttf') format("truetype");
+}
+/** Line 6
+   OC CIS 155 Web Development I
+   Build on Concepts Project #2
+
+   Author: Bryan Hyland
+   Date: 27 Jul 18 (Updated)
+   Filename:  sbstyles.css
+Line 13 **/
+
+/** Structual Styles **/
+html {
+  background-color: rgb(0, 150, 200);
+}
+
+/** Body Section **/
+body {
+  font-family: Jura-Regular, cursive;
+  font-kerning: normal;
+  color: rgb(0, 150, 200);
+}
+
+/** Body Section **/
+
+#heading1 {
+  font-family: Jura-Regular, monospace;
+  font-size: 5.25em;
+  color: rgb(0, 150, 200);
+  text-shadow: black 0px 0px 3px,
+               gold 4px 4px 4px,
+               orange 0px 0px 55px;
+}
+
+/* Auto sizes the logo image for all devices */
+a[href*="http://bryanhyland.com"]:link, a[href*="http://bryanhyland.com"]:visited {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+a[href*="http://bryanhyland.com"]:hover, a[href*="http://bryanhyland.com"]:active {
+  text-decoration: underline;
+  color: rgba(0, 150, 200, 0.4);
+}
+
+/* Projects id so that all project pages are styled the same */
+#projects {
+  font-size: 1.2em;
+  width: 100%;
+  background-color: black;
+}
+
+section#projects img {
+  border: 0px;
+  padding: 0px;
+  width: 100%;
+  max-width: 480px;
+}
+
+section#projects blockquote.top {
+  padding-top: 2%;
+  }
+
+ section#projects figure.top {
+  padding-top: 2%;
+}
+
+section#projects li {
+  list-style-type: none;
+}
+
+/* contactMe class */
+p.contactMe {
+  font-size: 1.5em;
+}
+
+/* Untiled background image for grading */
+div.BG {
+  display: block;
+  background-color: black;
+  background-image: url("../images/top_bot_bg.png"); /* Line 78 Untiled background image for grading */
+  background-repeat: no-repeat; /* Line 79 Untiled background image for grading */
+  height: auto;
+}
+
+/* Line 89 Starts footer for grading */
+footer {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(-180deg, rgb(53, 53, 53),
+                                      rgb(0, 0, 0));
+} /* Line 95 Ends footer for grading */
+
+/** Navigation Section **/
+/* Head Navigation Class */
+
+
+nav.headNav > ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+nav.headNav > ul > li {
+  border:  7px outset rgba(0, 150, 200, 1);
+  border-radius: 20%; /* Line 105 for grading */
+  background-color: rgba(0, 150, 200, 1);
+}
+
+nav.headNav > ul > li > a {
+  font-family: Jura-Regular;
+}
+
+nav.headNav > ul > li > a {
+  text-decoration: none;
+}
+
+nav.headNav > ul > li > a:link, nav.headNav > ul > li > a:visited {
+  color: rgb(255, 255, 255);
+}
+
+nav.headNav > ul > li > a:hover, nav.headNav > ul > li > a:active {
+  color: rgb(5, 245, 189);
+}
+
+/* Portfolio links Class */
+
+ul.portfolioLinks {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+ul.portfolioLinks > li > a {
+  font-family: Jura-Regular;
+}
+
+ul.portfolioLinks > li > a:link, ul.portfolioLinks > li > a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+ul.portfolioLinks > li > a:hover, ul.portfolioLinks > li > a:active {
+  text-decoration: none;
+  color: orange;
+}

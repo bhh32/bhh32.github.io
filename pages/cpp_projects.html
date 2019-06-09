@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+      OC CIS 155 Web Development I
+      Build on Concepts Project #1
+
+      Line 8 for grading - Student Name: Bryan Hyland
+      Line 9 for grading - Date:         8 Aug 18
+
+      Filename: cpp_projects.html
+      Supporting files: layout.css, slapPapLogo.png
+    -->
+    <meta charset="utf-8" />
+    <meta name="description" content="CPP Projects" />
+    <meta name="keywords" content="C++, Game Programming, video game, programmer, software developer" />
+    <meta name="author" content="Bryan Hyland" />
+
+    <title> C++ Projects </title>
+
+    <link rel="stylesheet" type="text/css" href="../css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../css/sbstyles.css" />
+    <link rel="stylesheet" type="text/css" href="../css/cpp_styles.css" />
+    <script src="../js/cpp_js.js" type="text/javascript"></script>
+
+    <style>
+      body {
+        background: linear-gradient(70deg, rgb(0, 0, 0), rgb(53, 53, 53) 80%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="majorContainer">
+      <div id="heading"> <!-- Line 34 Start of Heading div for grading -->
+        <header>
+          <!-- This sets the h1 in the heading class and aside in the logo class inline to each other -->
+          <h1 id="heading1">C++ Projects
+            <a href="../pages/index.html"><img class="logo" src="../images/slapPapLogo.png" alt="logo" /></a>
+          </h1>
+        </header>
+      </div> <!-- Line 41 End of heading div for grading -->
+
+      <div id="navigation"> <!-- Line 43 Start of Navigation Div for grading -->
+        <!-- top navigation bar -->
+        <nav class="headNav">
+          <ul>
+            <li><a href="../pages/index.html">Home</a></li>
+            <li><a href="../pages/cpp_projects.html">C++ Projects</a></li>
+            <li><a href="../pages/unreal_projects.html">Unreal Engine 4</a></li>
+            <li><a href="../pages/contact.html">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div><!-- Line 53 End of navigation div for grading -->
+
+      <section>
+        <header id="cpp_Projs"><h2>C++ Project Page</h2></header> <!-- Line 56 header for grading -->
+
+        <section class="arti_tab"> <!-- Line 58 start of columner content for grading -->
+        <article> <!-- Line 59 Start of article element for grading -->
+          <table id="article_table">
+            <thead>
+              <tr><th>Making Games</th></tr>
+            </thead>
+            <tr>
+              <td>The form works, mostly. If you put your name in and
+                  click submit you'll get a popup window using the input fields.
+                  I'm not really sure what else I should write here
+                  for now, but maybe this'll do.</td>
+              <td>Have you ever made a video game before? If it's something that you think
+                  you'd like to try, I encourage it. I love to program, and making games is
+                  highly enjoyable to me. I know some would say that I'm crazy for putting
+                  myself through the anguish of sitting for hours staring at a computer
+                  writing code. I will admit that we all have to be some kind of crazy for
+                  this type of work to be something that we actually want to do. The reward
+                  for me however is when I get to see someone play my game, and enjoy it. I've
+                  had a few people test games there we at most playable. To see them laugh and
+                  have a good time playing them made all the hours of programming and debugging
+                  worth it. Bringing joy to people's lives is something I truly enjoy, and this
+                  happens to be the way that I do that.</td>
+              <td>Making games is fun. I enjoy making them. Don't ask me why, but I do.
+                  The satisfaction of seeing people play my games makes me happy.</td>
+            </tr>
+          </table> <!-- Line 81 End of coumner Content for grading -->
+          <form id="updateForm" method="post"> <!-- Line 82 for grading, This is the update mailing list form -->
+            <h2>Sign Up For Updates</h2>
+            First Name: <input type="text" name="firstname"  id="fname"/><br><br>
+            Last Name: <input type="text" name="lastname" id="lname"/><br><br>
+            E-mail Address: &nbsp;<input type="email" name="emailaddress" /><br><br>
+            <input type="reset" name="resetbutton" value="Reset Form" />
+            <input type="submit" name="submitbutton" id="subButton" onclick="formSubmit(this.form)" value="Submit" />
+          </form> <!-- Line 89 end of form for grading -->
+        </article> <!-- Line 90 end of article element for grading -->
+      </section>
+
+        <section id="videos"><!-- Line 93 for grading, This section holds the videos of the projects -->
+          <video controls poster="../images/mario.png">
+            <source src="../videos/mario_platformer.mp4" type="video/mp4" />
+          </video>
+          <video controls poster="../images/space_rogue_1.png">
+            <source src="../videos/Space_Rogue1.mp4" type="video/mp4" />
+          </video>
+          <video controls poster="..images/space_rogue_2.png">
+            <source src="../videos/Space_Rogue2.mp4" type="video/mp4">
+            </video>
+        </section> <!-- Line 103 end of horizontal grouping for grading -->
+
+
+        <table id="project_list"><!-- Line 106 for grading, Table listing the details for each project -->
+          <thead>
+            <tr>
+              <th colspan="4">Project Details</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr><!-- Table Column Information -->
+              <th>Project Name</th>
+              <th>Type Of Project</th>
+              <th>API Used</th>
+              <th>Time To Complete</th>
+            </tr>
+            <tr><!-- Mario Platformer Information -->
+              <td>Mario<br/>Platformer</td>
+              <td>Console</td>
+              <td>In-house<br/>Engine</td>
+              <td>1 Week</td>
+            </tr>
+            <tr><!-- Space Rogue 1 -->
+              <td>Space Rouge<br/>Vers 1</td>
+              <td>Console</td>
+              <td>C++ Standard<br/>Library</td>
+              <td>1.5 Weeks</td>
+            </tr>
+            <tr><!-- Space Rouge 2 -->
+              <td>Space Rogue<br/>Vers 2</td>
+              <td>Console</td>
+              <td>C++ Standard<br/>Library</td>
+              <td>1.5 Weeks</td>
+            </tr>
+          </tbody>
+        </table> <!-- Line 139 End of table for grading -->
+
+        <div class="BG">&nbsp;</div> <!-- Untiled background image -->
+
+        <footer> <!-- Line 143 Start of footer element for grading -->
+          &copy; Bryan Hyland
+        </footer><!-- Line 145 End of footer element for grading -->
+      </section>
+    </div> <!-- end of major container div -->
+
+  </body>
+</html>
