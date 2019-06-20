@@ -12,11 +12,11 @@ body {
 .comic-pic-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .ill-pic {
-  width: 20em;
+  width: 12em;
 }
 
 .comic-logos-pic, .seeker-pic {
