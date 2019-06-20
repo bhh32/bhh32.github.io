@@ -24,7 +24,7 @@ body {
 
 @media screen and (max-width: 600px) {
   body {
-    grid-template-rows: 115px 1fr 1.25fr 100px;
+    grid-template-rows: 90px 350px 400px 75px;
   }
 
   .contact-links {
