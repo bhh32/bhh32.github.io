@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Jura-Regular;
+    src: url('../fonts/Jura-Regular.ttf') format("truetype");
+}
+
+/** Structual Styles **/
+/** Body Section **/
+body {  
+  font-family: Jura-Regular, cursive, monospace;
+  font-kerning: normal;
+  background-color: rgb(53, 53, 53);
+  color: rgb(0, 150, 200);
+}
+
+a {
+  font-family: Jura-Regular, cursive, monospace;
+  font-kerning: normal;
+  color: rgba(0, 150, 200, .85);
+  vertical-align: middle;
+  text-align: center;
+}
+
+header, nav, .content {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.headertext {
+  font-size: 3em;
+  color: rgb(0, 150, 200);
+  text-shadow: black 0px 0px 3px,
+               gold 4px 4px 4px,
+               orange 0px 0px 55px;
+}
+
+/** Navigation Section **/
+.navlink {
+  color: rgba(0, 0, 0, .80);
+  text-decoration: none;
+  background-color: rgb(0, 150, 200);
+  border-radius: 100px;
+  box-shadow: black 0px 0px 3px,
+              gold 4px 4px 4px,
+              orange 0px 0px 55px;
+}
+
+.navlink:hover {
+  background-color: rgba(1, 100, 133, 0.73);
+}
+
+.navlink:visited {
+  color: rgba(0, 0, 0, .80);
+}
+
+.navlink>p {
+  font-size: 15px;
+}
+
+.content {
+  background-repeat: no-repeat;
+  background-size: 100% 99.8%;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  border-top: 5px groove red;
+}
+
+.footer-contact-item:hover {
+  animation: blast .75s infinite;
+}
+
+/* Animations */
+@keyframes blast {
+    0% {
+      text-shadow: rgba(0, 0, 0, 0);
+    }
+
+    50% {
+      text-shadow: gold 5px 5px 8px,
+                   orange 0px 0px 10px;
+    }
+
+    100% {
+      text-shadow: rgba(0, 0, 0, 0);
+    }
+}
+
+@-moz-keyframes blast {
+  0% {
+    text-shadow: rgba(0, 0, 0, 0);
+  }
+
+  50% {
+    text-shadow: gold 5px 5px 8px,
+                 orange 0px 0px 10px;
+  }
+
+  100% {
+    text-shadow: rgba(0, 0, 0, 0);
+  }
+}
+
+@-webkit-keyframes blast {
+  0% {
+    text-shadow: rgba(0, 0, 0, 0);
+  }
+
+  50% {
+    text-shadow: gold 5px 5px 8px,
+                orange 0px 0px 10px;
+  }
+
+  100% {
+    text-shadow: rgba(0, 0, 0, 0);
+  }
+}

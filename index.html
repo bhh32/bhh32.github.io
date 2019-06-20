@@ -8,53 +8,42 @@
 
     <title> Bryan's Portfolio </title>
 
-    <link rel="stylesheet" type="text/css" href="./css/layout.css" />
-    <link rel="stylesheet" type="text/css" href="./css/sbstyles.css" />
-
-    <style>
-      body {
-        background: linear-gradient(70deg, rgb(0, 0, 0), rgb(53, 53, 53) 80%);
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./css/newlayout.css" />
+    <link rel="stylesheet" type="text/css" href="./css/newstandardstyle.css" />
   </head>
 
   <body>
-    <div id="majorContainer">
-      <div id="heading">
-        <header>
-          <!-- This sets the h1 in the heading class and aside in the logo class inline to each other -->
-          <h1 id="heading1">Bryan's Portfolio
-            <a href="https://bhh32.github.io" target="_blank"><img class="logo" src="./images/slapPapLogo.png" alt="logo" /></a>
-          </h1>
-        </header>
-      </div> <!-- end of heading div -->
-
-      <div id="navigation">
-        <!-- top navigation bar -->
-        <nav class="headNav">
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./pages/cpp_projects.html">C++ Projects</a></li>
-            <li><a href="./pages/unreal_projects.html">Unreal Engine 4</a></li>
-            <li><a href="./pages/contact.html">Contact Me</a></li>
-          </ul>
-        </nav>
-      </div><!-- end of navigation div -->
-
-      <!-- Introduction section -->
+    <header>
+      <h1 class="headertext">Bryan's Portfolio</h1>
+      <img class="header-img" src="./images/slapPapLogo.png" alt="slappy-pappy-logo" />
+    </header>
+    <!-- top navigation bar -->
+    <nav class="headNav">
+      <a class="navlink index" href="./index.html"><p>Home</p></a>
+      <a class="navlink cpp" href="./pages/cpp_projects.html"><p>C++ Projects</p></a>
+      <a class="navlink java" href="./pages/java_projects.html"><p>Java</p></a>
+      <a class="navlink cs" href="./pages/csharp_projects.html"><p>C# Projects</p></a>
+      <a class="navlink unreal" href="./pages/unreal_projects.html"><p>Unreal Engine 4</p></a>
+      <a class="navlink unity" href="./pages/unity_projects.html"><p>Unity</p></a>
+      <a class="navlink contact" href="./pages/contact.html"><p>Contact Me</p></a>
+    </nav>
+    <div class="content">
+    <!-- Introduction section -->
       <section class="intro">
-        <h3 class="intro">Introduction</h3>
-        <p class="intro">Hello, my name is Bryan. I am a programmer that does all types of different programming.
+        <h3 class="intro-head">Introduction</h3>
+        <p class="intro-body">Hello, my name is Bryan. I am a programmer that does all types of different programming.
             Most of my projects are video games. Visit each particular page to see what I've done
             in that particular framework. </p>
-        <p class=intro>Thank you, again, for visiting! My resumé is linked on the contact page.
+          <p class=intro-body>Thank you, again, for visiting! My resumé is linked on the contact page as well as in the footer.
       </section>
-    </div> <!-- end of the major container div -->
-
-    <div class="BG">&nbsp;</div>
-
+    </div>
     <footer id="footer">
-      &copy; Bryan Hyland
+      <div class="footer-text">&copy; Bryan Hyland</div>
+      <div class="footer-contact">
+        <a class="footer-contact-item resume" href="https://resume.creddle.io/resume/kh4jwsbndq">Resume</a>
+        <a class="footer-contact-item github" href="https://github.com/bhh32/">GitHub</a>
+        <a class="footer-contact-item email" href="mailto:bryan.hyland32@gmail.com">Email</a>
+      </div>
     </footer>
   </body>
 </html>

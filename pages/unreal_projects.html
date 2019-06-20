@@ -1,108 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
 
-    <!-- Line 5
-      OC CIS 155 Web Development I
-      Build on Concepts Project #1
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Bryan's Contact Info" />
+  <meta name="author" content="Bryan Hyland" />
+  <meta name="keywords" content="Unity3D, games, video games, unity games" />
+  <title> Bryan's Portfolio - Contact </title>
 
-      Student Name: Bryan Hyland
-      Date:         8 Aug 18
+  <link rel="stylesheet" type="text/css" href="../css/newlayout.css" />
+  <link rel="stylesheet" type="text/css" href="../css/newstandardstyle.css" />
+  <link rel="stylesheet" type="text/css" href="../css/unreal.css" />
+</head>
 
-      Filename: unreal_projects.html
-      Supporting files: layout.css, sbstyles.css, slapPapLogo.png
-    Line 14 -->
-    <meta charset="utf-8" />
-    <meta name="description" content="Unreal Engine 4 Projects" />
-    <meta name="keywords" content="Portfolio, UE4" />
-    <meta name="author" content="Bryan Hyland" />
-
-    <title> Bryan's Portfolio - Unity Projects </title>
-
-    <link rel="stylesheet" type="text/css" href="../css/layout.css" />
-    <link rel="stylesheet" type="text/css" href="../css/sbstyles.css" />
-
-    <style>
-      body {
-        /*Line 28 for grading, makes the body background a linear gradient from black to dark gray */
-        background: linear-gradient(70deg, rgb(0, 0, 0), rgb(53, 53, 53) 80%);
-      }
-
-      nav.headNav > ul > li > a {
-        transition: all .2s ease-in-out;
-      }
-
-      /* Line 36 for grading, rotates the project images 2.5 deg on the z axis */
-      section#projects figure {
-        transform: rotateZ(2.5deg);
-      }
-    </style>
-  </head>
-
-  <body>
-    <div id="majorContainer">
-    <!-- header and nav beginning line 44 -->
-      <div> <!-- heading div begins -->
-        <map name="logo_map"> <!-- Line 46  for grading start image map -->
-          <area shape="poly" coords="52,9,26,22,20,53,27,80,47,88,93,48,82,24" href="../index.html" alt="SlappyPappyLogo" />
-        </map> <!-- Line 48 end image map -->
-      <!-- This sets the h1 in the heading class -->
-        <header>
-          <!-- Line 51 Logo mapped to image map --><h1 id="heading1">UE4 Projects<img class="logo" src="../images/slapPapLogo.png" alt="logo" usemap="#logo_map" /></h1>
-        </header>
-      </div><!-- end of heading div -->
-
-      <div id="navigation">
-        <!-- top navigation bar -->
-        <nav class="headNav">
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/cpp_projects.html">C++ Projects</a></li>
-            <li><a href="../pages/unreal_projects.html">Unreal Engine 4</a></li>
-            <li><a href="../pages/contact.html">Contact Me</a></li>
-          </ul>
-        </nav>
-      </div><!-- end of navigation div -->
-
-      <!-- header and nav end line 66 -->
-        <!-- Line 47 starts projects sections -->
-        <section id="projects">
-            <ul> <!-- start the project unordered list -->
-              <li> <!-- start first project structure -->
-                <aside>
-                  <blockquote class="top">This is a mash up of a bunch of assignments that I had in an Unreal Engine 4 programming class. I just continued to build on top of
-                    older assignments, and by the end of the class this is what I got.</blockquote>
-                </aside>
-                <figure>
-                  <img class="top" src="../images/assignment_mash.png" alt="Assignment Mash">
-                </figure>
-              </li> <!-- end first project structure -->
-
-              <li> <!-- start second project structure -->
-                <aside>
-                  <blockquote>A school project turned actual project. I have since decided to continue this project in Unity. However, this is where it all started.</blockquote>
-                </aside>
-                <figure>
-                  <img src="../images/clean_room_unreal.png" alt="Unreal Clean Room">
-                </figure>
-              </li> <!-- end second project structure -->
-
-              <li> <!-- start third project structure -->
-                <aside>
-                  <blockquote class="bottom">This is Ravvit. Everything about him was a misconception. His name was a typo, and was orignally a drawing of Odie from "Garfield and Friends"
-                    I had misinterpreted until the drawing was complete.</blockquote>
-                </aside>
-                <figure class="bottom">
-                  <img src="../images/ravvit_walking.png" alt="Ravvit Walking">
-                </figure>
-              </li> <!-- end third project structure -->
-            </ul> <!-- end the project unordered list -->
-        </section><!-- line 91 ends projects section -->
-    </div><!-- end of major container div -->
-
-    <div class="BG">&nbsp;</div> <!-- Line 102 Untiled background Image for grading -->
-    <footer>
-      &copy; Bryan Hyland
-    </footer>
-  </body>
+<body>
+  <header>
+    <h1 class="headertext">Bryan's Portfolio</h1>
+    <a href="../index.html"><img class="header-img" src="../images/slapPapLogo.png" alt="slappy-pappy-logo" /></a>
+  </header>
+  <!-- top navigation bar -->
+  <nav class="headNav">
+    <a class="navlink index" href="../index.html">
+      <p>Home</p>
+    </a>
+    <a class="navlink cpp" href="../pages/cpp_projects.html">
+      <p>C++ Projects</p>
+    </a>
+    <a class="navlink java" href="../pages/java_projects.html">
+      <p>Java</p>
+    </a>
+    <a class="navlink cs" href="../pages/csharp_projects.html">
+      <p>C# Projects</p>
+    </a>
+    <a class="navlink unreal" href="../pages/unreal_projects.html">
+      <p>Unreal Engine 4</p>
+    </a>
+    <a class="navlink unity" href="../pages/unity_projects.html">
+      <p>Unity</p>
+    </a>
+    <a class="navlink contact" href="../pages/contact.html">
+      <p>Contact Me</p>
+    </a>
+  </nav>
+  <div class="content">
+    <section class="page-text">
+      <h3 class="page-text-head">Unreal Engine 4 Projects</h3>
+      <div class="page-text-body">
+        <img class="assignment-mash-img unreal-imgs" src="../images/assignment_mash.png" alt="assignment-mash">
+        <p class="unreal-desc assignment-mash-desc">
+          This assignment was one I did over a course of a quarter while attending Southern New Hampshire University - Online. It's done all in Unreal's C++ API, and was a very fun project. I call it "Assignment Mash-Up" because it was a bunch of assignements all mashed into one game project.
+        </p>
+        <img class="unreal-imgs clean-room-img" src="../images/clean_room_unreal.png" alt="clean-room-unreal">
+        <p class="unreal-desc clean-room-unreal-desc">
+          "Clean Your Room" started off as a school assignment, but I enjoyed the concept so much that I continued development. It's still under development to this day, but it has been converted to a Unity3D project.
+        </p>
+        <img class="unreal-imgs ravvit-img" src="../images/ravvit_walking.png" alt="ravvit-img">
+        <p class="unreal-desc ravvit-desc">
+          Ravvit was an idea I had while watching a co-worker draw Odie from "Garfield and Friends" on a white board. It looked nothing like Odie at first, but instead looked like the little guy in the picture. Ravvit is a 2D character drawn in Adobe Illustrator and exported as a 2D sprite sheet into Spriter to do the 2D animation. From there I used Unreal to program the movement and used Unreal's Flipbook for the animation blending.
+        </p>
+      </div>
+    </section>
+    </div>
+  <footer id="footer">
+    <div class="footer-text">&copy; Bryan Hyland</div>
+    <div class="footer-contact">
+      <a class="footer-contact-item resume" href="https://resume.creddle.io/resume/kh4jwsbndq">Resume</a>
+      <a class="footer-contact-item github" href="https://github.com/bhh32/">GitHub</a>
+      <a class="footer-contact-item email" href="mailto:bryan.hyland32@gmail.com">Email</a>
+    </div>
+  </footer>
+</body>
 </html>

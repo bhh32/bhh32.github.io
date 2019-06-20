@@ -1,0 +1,25 @@
+.contact-links {
+    transform: translate(30%, 40%);
+}
+
+.contact-link {
+    text-decoration: none;
+    display: block;
+    width: 15em;
+    background-color: rgba(49, 45, 45, 0.63);
+    box-shadow: black 0px 0px 3px,
+                gold 4px 4px 4px,
+                orange 0px 0px 15px;
+}
+
+.contact-link:hover {
+    width: 16em;
+    color: rgba(228, 214, 18, 0.63);
+    background-color: rgba(1, 100, 133, 0.73);
+}
+
+@media screen and (max-width: 600px) {
+    .contact-links {
+        transform: translate(13%, 50%);
+    }
+}
