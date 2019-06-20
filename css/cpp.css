@@ -15,20 +15,28 @@
     grid-column: 2 / -1;
 }
 
+.proj-vid-desc>a:hover {
+    animation: blast .75s infinite;
+}
+
 @media screen and (max-width: 600px) {
-    .page-text-body {
-        transform: translateX(2%);
-        display: flex;
-        flex-direction: column;
-    }
+  body {
+      grid-template-rows: 115px 300px 2fr 100px;
+  }
 
-    .proj-vid {
-        display: block;
-        width: 20em;
-    }
+  .page-text-body {
+    transform: translateX(2%);
+    display: flex;
+    flex-direction: column;
+  }
 
-    .grid-vid-desc {
-        font-size: 10px;
-        display: block;
-    }
+  .proj-vid {
+    display: block;
+    width: 20em;
+  }
+
+  .grid-vid-desc {
+    font-size: 10px;
+    display: block;
+  }
 }

@@ -4,3 +4,9 @@
     grid-template-columns: repeat(2, minmax(30em, 1fr));
     grid-template-rows: repeat(auto-fit, auto);
 }
+
+@media screen and (max-width: 600px) {
+  body {
+      grid-template-rows: 115px 300px 2fr 100px;
+  }
+}

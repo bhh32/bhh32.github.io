@@ -15,13 +15,17 @@
 }
 
 @media screen and (max-width: 600px) {
-    .page-text-body {
-        transform: translateX(2%);
-        display: flex;
-        flex-direction: column;
-    }
+  body {
+      grid-template-rows: 115px 300px 2fr 100px;
+  }
 
-    .unreal-imgs {
-        width: 20em;
-    }
+  .page-text-body {
+    transform: translateX(2%);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .unreal-imgs {
+    width: 20em;
+  }
 }

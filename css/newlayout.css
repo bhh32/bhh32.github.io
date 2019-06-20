@@ -7,13 +7,13 @@ body {
     display: grid;
     grid-row-gap: 3%;
     grid-column-gap: 3%;
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: 115px 40px 80em 100px;
-    grid-template-areas: 
-        "gutter-left header      gutter-right"
-        ".         page-title    gutter-right"
-        "nav       content       gutter-right"
-        ".         footer        gutter-right";
+    grid-template-columns: 1fr 1fr 4fr 1fr;
+    grid-template-rows: 110px 40px 80em 100px;
+    grid-template-areas:
+        "gutter-left   header    header      gutter-right"
+        "gutter-left   .         page-title  gutter-right"
+        "gutter-left   nav       content     gutter-right"
+        "gutter-left   .         footer      gutter-right";
 }
 
 header {
@@ -28,7 +28,7 @@ header {
 .header-img {
     display: block;
     float: right;
-    width: 20%;
+    width: 16%;
 }
 
 .headNav {
@@ -81,8 +81,8 @@ footer {
 @media screen and (max-width: 600px) {
     body {
         grid-template-columns: 100%;
-        grid-template-rows: 115px 1fr 2fr 100px;
-        grid-template-areas: 
+        grid-template-rows: 115px 300px 2fr 100px;
+        grid-template-areas:
             "header"
             "nav"
             "content"
@@ -93,7 +93,7 @@ footer {
     header {
         font-size: 10px;
     }
-    
+
     .headNav {
         grid-area: nav;
         display: grid;

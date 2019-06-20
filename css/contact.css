@@ -19,7 +19,11 @@
 }
 
 @media screen and (max-width: 600px) {
-    .contact-links {
-        transform: translate(13%, 50%);
-    }
+  body {
+    grid-template-rows: 115px 1fr 1.25fr 100px;
+  }
+
+  .contact-links {
+    transform: translate(15%, 50%);
+  }
 }
