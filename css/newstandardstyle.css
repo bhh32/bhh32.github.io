@@ -41,25 +41,31 @@ header, nav, .content {
 
 /** Navigation Section **/
 .navlink {
-  color: rgba(0, 0, 0, .80);
   text-decoration: none;
-  background-color: rgb(0, 150, 200);
+  background-color: rgba(49, 45, 45, 0.63);
   border-radius: 100px;
   box-shadow: black 0px 0px 3px,
               gold 4px 4px 4px,
-              orange 0px 0px 55px;
+              orange 0px 0px 15px;
 }
 
 .navlink:hover {
+  width: 90%;
+  color: rgba(228, 214, 18, 0.63);
   background-color: rgba(1, 100, 133, 0.73);
 }
 
 .navlink:visited {
-  color: rgba(0, 0, 0, .80);
 }
 
 .navlink>p {
   font-size: 15px;
+}
+
+.active-navlink {
+  width: 90%;
+  color: rgba(228, 214, 18, 0.63);
+  background-color: rgba(1, 100, 133, 0.90);
 }
 
 .content {
