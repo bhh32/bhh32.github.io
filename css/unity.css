@@ -1,3 +1,7 @@
+body {
+  grid-template-rows: 110px 40px 70em 75px;
+}
+
 .page-text-body {
     display: grid;
     grid-gap: 10px;

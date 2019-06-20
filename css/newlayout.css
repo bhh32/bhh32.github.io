@@ -8,7 +8,7 @@ body {
     grid-row-gap: 3%;
     grid-column-gap: 3%;
     grid-template-columns: 1fr 1fr 4fr 1fr;
-    grid-template-rows: 110px 40px 80em 100px;
+    grid-template-rows: 110px 40px 60em 75px;
     grid-template-areas:
         "gutter-left   header    header      gutter-right"
         "gutter-left   .         page-title  gutter-right"
@@ -94,6 +94,10 @@ footer {
 
     header {
         font-size: 10px;
+    }
+
+    .header-img {
+        display: none;
     }
 
     .headNav {

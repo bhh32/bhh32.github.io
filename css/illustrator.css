@@ -1,3 +1,7 @@
+body {
+  grid-template-rows: 110px 40px 100em 100px;
+}
+
 .page-text-body {
     display: grid;
     grid-gap: 10px;
@@ -26,6 +30,11 @@
 
 .seeker-pic {
   width: 30em;
+}
+
+.slappy-pappy-pic {
+  width: 16em;
+  border: 2px groove rgba(255, 0, 0, .80);
 }
 
 .ill-pic-desc>a:hover {
