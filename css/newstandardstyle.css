@@ -6,7 +6,7 @@
 
 /** Structual Styles **/
 /** Body Section **/
-body {  
+body {
   font-family: Jura-Regular, cursive, monospace;
   font-kerning: normal;
   background-color: rgb(53, 53, 53);
@@ -32,6 +32,11 @@ header, nav, .content {
   text-shadow: black 0px 0px 3px,
                gold 4px 4px 4px,
                orange 0px 0px 55px;
+}
+
+.header-img:hover {
+  cursor: pointer;
+  animation: bounce 1.25s infinite;
 }
 
 /** Navigation Section **/
@@ -62,6 +67,10 @@ header, nav, .content {
   background-size: 100% 99.8%;
 }
 
+.page-text>h3 {
+  font-size: 2em;
+}
+
 footer {
   width: 100%;
   height: auto;
@@ -73,6 +82,52 @@ footer {
 }
 
 /* Animations */
+@keyframes bounce {
+    0% {
+      box-shadow: rgba(0, 0, 0, 0);
+    }
+
+    50% {
+      box-shadow: black 5px 5px 8px,
+                   black 0px 0px 10px;
+    }
+
+    100% {
+      box-shadow: rgba(0, 0, 0, 0);
+    }
+}
+
+@-moz-keyframes bounce {
+  0% {
+    box-shadow: rgba(0, 0, 0, 0);
+  }
+
+  50% {
+    box-shadow: black 5px 5px 8px,
+                 black 0px 0px 10px;
+  }
+
+  100% {
+    box-shadow: rgba(0, 0, 0, 0);
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    box-shadow: rgba(0, 0, 0, 0);
+  }
+
+  50% {
+    box-shadow: black 5px 5px 8px,
+                black 0px 0px 10px;
+  }
+
+  100% {
+    box-shadow: rgba(0, 0, 0, 0);
+  }
+}
+
+
 @keyframes blast {
     0% {
       text-shadow: rgba(0, 0, 0, 0);

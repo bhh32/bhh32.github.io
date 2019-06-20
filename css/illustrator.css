@@ -1,0 +1,49 @@
+.page-text-body {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, minmax(30em, 1fr));
+    grid-template-rows: repeat(auto-fit, auto);
+}
+
+.comic-pic-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.ill-pic {
+  width: 20em;
+}
+
+.comic-logos-pic, .seeker-pic {
+  width: 20em;
+  height: auto;
+}
+
+.comic-logos-pic {
+  justify-self: center;
+}
+
+.seeker-pic {
+  width: 30em;
+}
+
+.ill-pic-desc>a:hover {
+  animation: blast .75s infinite;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    grid-template-rows: 75px 350px 2fr 100px;
+  }
+
+  .page-text-body {
+    transform: translateX(2%);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .seeker-pic {
+    width: 20em;
+  }
+}

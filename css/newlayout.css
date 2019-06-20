@@ -46,7 +46,7 @@ header {
 
 .content {
     grid-area: content;
-    overflow-y: auto;
+    overflow: hidden auto;
 }
 
 footer {
