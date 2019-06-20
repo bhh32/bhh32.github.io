@@ -7,6 +7,6 @@
 
 @media screen and (max-width: 600px) {
   body {
-    grid-template-rows: 90px 350px 2fr 100px;
+    grid-template-rows: 110px 350px 2fr 75px;
   }
 }
