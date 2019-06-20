@@ -17,6 +17,7 @@ body {
 
 .ill-pic {
   width: 12em;
+  height: 24em;
 }
 
 .comic-logos-pic, .seeker-pic {
@@ -34,6 +35,7 @@ body {
 
 .slappy-pappy-pic {
   width: 16em;
+  height: auto;
   border: 2px groove rgba(255, 0, 0, .80);
 }
 
