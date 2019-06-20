@@ -1,3 +1,7 @@
+body {
+  grid-template-rows: 110px 40px 39em 75px;
+}
+
 .contact-links {
     transform: translate(30%, 40%);
 }
