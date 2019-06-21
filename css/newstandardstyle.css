@@ -77,6 +77,10 @@ footer {
   border-top: 5px groove red;
 }
 
+.footer-contact-item {
+  text-decoration: underline;
+}
+
 .footer-contact-item:hover {
   animation: blast .75s infinite;
 }
