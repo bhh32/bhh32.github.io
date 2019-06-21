@@ -52,9 +52,6 @@ header, nav, .content {
   background-color: rgba(1, 100, 133, 0.73);
 }
 
-.navlink:visited {
-}
-
 .navlink>p {
   font-size: 15px;
 }
