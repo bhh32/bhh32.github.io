@@ -29,9 +29,6 @@ header, nav, .content {
 .headertext {
   font-size: 3em;
   color: rgb(0, 150, 200);
-  text-shadow: black 0px 0px 3px,
-               gold 4px 4px 4px,
-               orange 0px 0px 55px;
 }
 
 .header-img:hover {
