@@ -1,9 +1,12 @@
+/* autoprefixer grid: autoplace */
+
 body {
   grid-template-rows: 110px 40px 39em 75px;
 }
 
 .contact-links {
-    transform: translate(30%, 40%);
+    -webkit-transform: translate(30%, 40%);
+            transform: translate(30%, 40%);
 }
 
 .contact-link {
@@ -28,6 +31,7 @@ body {
   }
 
   .contact-links {
-    transform: translate(15%, 50%);
+    -webkit-transform: translate(15%, 50%);
+            transform: translate(15%, 50%);
   }
 }

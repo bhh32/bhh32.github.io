@@ -1,11 +1,16 @@
+/* autoprefixer grid: autoplace */
+
 .page-text-body {
+    display: -ms-grid;
     display: grid;
     grid-gap: 10px;
+    -ms-grid-columns: minmax(30em, 1fr) 10px minmax(30em, 1fr);
     grid-template-columns: repeat(2, minmax(30em, 1fr));
     grid-template-rows: repeat(auto-fit, auto);
 }
 
 .unreal-imgs {
+    -ms-grid-column: 1;
     grid-column: 1 / 1;
     width: 30em;
 }
@@ -16,13 +21,18 @@
 
 @media screen and (max-width: 600px) {
   body {
+    -ms-grid-rows: 110px 350px 2fr 75px;
     grid-template-rows: 110px 350px 2fr 75px;
   }
 
   .page-text-body {
-    transform: translateX(2%);
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
   }
 
   .unreal-imgs {
