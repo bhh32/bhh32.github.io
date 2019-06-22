@@ -1,13 +1,9 @@
-/* autoprefixer grid: autoplace */
-
 body {
-  -ms-grid-rows: 110px 40px 39em 75px;
   grid-template-rows: 110px 40px 39em 75px;
 }
 
 @media screen and (max-width: 600px) {
   body {
-    -ms-grid-rows: 110px 350px 2fr 75px;
     grid-template-rows: 110px 350px 2fr 75px;
   }
 }

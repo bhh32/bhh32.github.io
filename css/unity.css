@@ -1,21 +1,15 @@
-/* autoprefixer grid: autoplace */
-
 body {
-  -ms-grid-rows: 110px 40px 100em 75px;
   grid-template-rows: 110px 40px 100em 75px;
 }
 
 .page-text-body {
-    display: -ms-grid;
     display: grid;
     grid-gap: 10px;
-    -ms-grid-columns: minmax(30em, 1fr) 10px minmax(30em, 1fr);
     grid-template-columns: repeat(2, minmax(30em, 1fr));
     grid-template-rows: repeat(auto-fit, auto);
 }
 
 .proj-vid {
-    -ms-grid-column: 1;
     grid-column: 1 / 1;
     display: inline-block;
     width: 30em;
@@ -27,23 +21,22 @@ body {
 
 .proj-vid-desc>a:hover {
     -webkit-animation: blast .75s infinite;
-            animation: blast .75s infinite;
+    animation: blast .75s infinite;
 }
 
 @media screen and (max-width: 600px) {
   body {
-    -ms-grid-rows: 110px 350px 2fr 75px;
     grid-template-rows: 110px 350px 2fr 75px;
   }
 
   .page-text-body {
     -webkit-transform: translateX(2%);
-            transform: translateX(2%);
+    transform: translateX(2%);
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column;
+    flex-direction: column;
   }
 
   .proj-vid {

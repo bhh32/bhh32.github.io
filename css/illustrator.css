@@ -1,15 +1,10 @@
-/* autoprefixer grid: autoplace */
 
-body {
-  -ms-grid-rows: 110px 40px 100em 100px;
   grid-template-rows: 110px 40px 100em 100px;
 }
 
 .page-text-body {
-    display: -ms-grid;
     display: grid;
     grid-gap: 10px;
-    -ms-grid-columns: minmax(30em, 1fr) 10px minmax(30em, 1fr);
     grid-template-columns: repeat(2, minmax(30em, 1fr));
     grid-template-rows: repeat(auto-fit, auto);
 }
@@ -35,7 +30,6 @@ body {
 }
 
 .comic-logos-pic {
-  -ms-grid-column-align: center;
       justify-self: center;
 }
 
@@ -56,7 +50,6 @@ body {
 
 @media screen and (max-width: 600px) {
   body {
-    -ms-grid-rows: 110px 350px 2fr 75px;
     grid-template-rows: 110px 350px 2fr 75px;
   }
 
