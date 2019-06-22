@@ -23,9 +23,16 @@ body {
     background-color: rgba(1, 100, 133, 0.73);
 }
 
-@media screen and (max-width: 600px) {
+@media
+  only screen and (min-width: 360px) and (max-width: 767px),
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 326dpi),
+  only screen and (                min-resolution: 2dppx) {
   body {
-    grid-template-rows: 110px 350px 400px 75px;
+    grid-template-rows: 140px 340px 400px 75px;
   }
 
   .contact-links {
