@@ -29,9 +29,6 @@ header, nav, .content {
 .headertext {
   font-size: 3em;
   color: rgb(0, 150, 200);
-  text-shadow: black 0px 0px 3px,
-               gold 4px 4px 4px,
-               orange 0px 0px 55px;
 }
 
 .header-img:hover {
@@ -53,9 +50,6 @@ header, nav, .content {
   width: 90%;
   color: rgba(228, 214, 18, 0.63);
   background-color: rgba(1, 100, 133, 0.73);
-}
-
-.navlink:visited {
 }
 
 .navlink>p {
@@ -81,6 +75,10 @@ footer {
   width: 100%;
   height: auto;
   border-top: 5px groove red;
+}
+
+.footer-contact-item {
+  text-decoration: underline;
 }
 
 .footer-contact-item:hover {
