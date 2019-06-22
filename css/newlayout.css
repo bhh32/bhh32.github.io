@@ -1,15 +1,20 @@
+/* autoprefixer grid: autoplace */
+
 html, body {
     margin: 0;
     padding: 0;
 }
 
 body {
+    display: -ms-grid;
     display: grid;
     grid-row-gap: 3%;
     grid-column-gap: 3%;
+    -ms-grid-columns: 1fr 3% 1fr 3% 4fr 3% 1fr;
     grid-template-columns: 1fr 1fr 4fr 1fr;
+    -ms-grid-rows: 110px 3% 40px 3% 60em 3% 75px;
     grid-template-rows: 110px 40px 60em 75px;
-    grid-template-areas:
+        grid-template-areas:
         "gutter-left   header    header      gutter-right"
         "gutter-left   .         page-title  gutter-right"
         "gutter-left   nav       content     gutter-right"
@@ -17,6 +22,9 @@ body {
 }
 
 header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
     grid-area: header;
 }
 
@@ -32,7 +40,10 @@ header {
 }
 
 .headNav {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
     grid-area: nav;
+    display: -ms-grid;
     display: grid;
     grid-column-gap: 10px;
     grid-template-rows: repeat(auto-fit, minmax(30px, 75px));
@@ -40,32 +51,46 @@ header {
 
 .navlink {
     text-align: center;
-    align-self: center;
-    justify-self: stretch;
+    -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
 }
 
 .content {
+    -ms-grid-row: 5;
+    -ms-grid-column: 5;
     grid-area: content;
     overflow-x: wrap;
     overflow-y: visible;
 }
 
 footer {
+    -ms-grid-row: 7;
+    -ms-grid-column: 5;
     grid-area: footer;
     grid-column: 1 / -1;
+    display: -webkit-box;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
     justify-content: space-around;
 }
 
 .footer-text {
-    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
 }
 
 .footer-contact {
-    transform: translateY(25%);
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
 }
 
 .footer-contact-item {
@@ -73,18 +98,22 @@ footer {
 }
 
 .resume {
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 .email {
-    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
 }
 
 @media screen and (max-width: 600px) {
     body {
+        -ms-grid-columns: 100%;
         grid-template-columns: 100%;
+        -ms-grid-rows: 115px 1% 300px 1% 2fr 1% 100px;
         grid-template-rows: 115px 300px 2fr 100px;
-        grid-template-areas:
+            grid-template-areas:
             "header"
             "nav"
             "content"
@@ -101,7 +130,10 @@ footer {
     }
 
     .headNav {
+        -ms-grid-row: 5;
+        -ms-grid-column: 3;
         grid-area: nav;
+        display: -ms-grid;
         display: grid;
         grid-row-gap: 10px;
         grid-template-rows: repeat(auto-fit, minmax(30px, 75px));
@@ -109,25 +141,63 @@ footer {
 
     .navlink {
         text-align: center;
-        justify-content: center;
-        align-self: center;
-        justify-self: stretch;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -ms-grid-row-align: center;
+            align-self: center;
+        -ms-grid-column-align: stretch;
+            justify-self: stretch;
     }
 
     footer {
+        -ms-grid-row: 7;
+        -ms-grid-column: 5;
         grid-area: footer;
         grid-column: 1 / -1;
+        display: -webkit-box;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
         justify-content: space-around;
     }
 
+    @media screen and (max-width: 600px) {
+      .headNav {
+              -ms-grid-row: 3;
+              -ms-grid-column: 1;
+      }
+      footer {
+              -ms-grid-row: 7;
+              -ms-grid-column: 1;
+      }
+    }
+
     .footer-text {
-        transform: translateX(30%);
+        -webkit-transform: translateX(30%);
+                transform: translateX(30%);
     }
 
     .footer-contact {
         display: inline-block;
-        transform: translate(25%, -25%);
+        -webkit-transform: translate(25%, -25%);
+                transform: translate(25%, -25%);
+    }
+    header {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+    }
+    .headNav {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+    .content {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+    }
+    footer {
+        -ms-grid-row: 7;
+        -ms-grid-column: 1;
     }
 }
