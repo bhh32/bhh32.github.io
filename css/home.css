@@ -11,6 +11,7 @@ body {
   only screen and (                min-resolution: 458dpi),
   only screen and (                min-resolution: 3dppx) {
     body {
+      grid-template-rows: 1fr 500px auto 75px;
       grid-row-gap: 3px;
     }
 }
