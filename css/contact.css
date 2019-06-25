@@ -1,5 +1,5 @@
 body {
-  grid-template-rows: 110px 40px 39em 75px;
+  grid-template-rows: auto 39em 75px;
 }
 
 .contact-links {
@@ -31,12 +31,20 @@ body {
   only screen and (        min-device-pixel-ratio: 2),
   only screen and (                min-resolution: 326dpi),
   only screen and (                min-resolution: 2dppx) {
+
   body {
-    grid-template-rows: 140px 340px 400px 75px;
+    grid-template-rows: 1fr 500px auto 75px;
+    grid-row-gap: 3px;
   }
 
+  .page-text-body {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+    }
+
   .contact-links {
-    -webkit-transform: translate(15%, 50%);
-            transform: translate(15%, 50%);
+    transform: translate(15%, 3%);
+    -webkit-transform: translate(15%, 3%);
   }
 }

@@ -1,5 +1,5 @@
 body {
-  grid-template-rows: 110px 40px 100em 100px;
+  grid-template-rows: auto 100em 100px;
 }
 
 .page-text-body {
@@ -40,7 +40,7 @@ body {
 .slappy-pappy-pic {
   width: 16em;
   height: auto;
-  border: 2px groove rgba(255, 0, 0, .80);
+  justify-self: center;
 }
 
 .ill-pic-desc>a:hover {
@@ -56,18 +56,23 @@ body {
   only screen and (        min-device-pixel-ratio: 3),
   only screen and (                min-resolution: 458dpi),
   only screen and (                min-resolution: 3dppx) {
-  body {
-    grid-template-rows: 140px 340px 2fr 75px;
+
+   body {
+      grid-template-rows: 1fr 500px auto 75px;
+      grid-row-gap: 3px;
+    }
+    
+    .page-text-body {
+      display: flex;
+      flex-direction: column;
+    }
+
+  .ill-pic {
+    align-self: center;
   }
 
-  .page-text-body {
-    -webkit-transform: translateX(2%);
-            transform: translateX(2%);
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
+  .ill-pic-desc {
+    text-align: center;
   }
 
   .seeker-pic {

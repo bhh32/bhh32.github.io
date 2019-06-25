@@ -1,5 +1,5 @@
 body {
-  grid-template-rows: 110px 40px 100em 75px;
+  grid-template-rows: auto 100em 75px;
 }
 
 .page-text-body {
@@ -32,27 +32,23 @@ body {
   only screen and (        min-device-pixel-ratio: 3),
   only screen and (                min-resolution: 458dpi),
   only screen and (                min-resolution: 3dppx) {
-  body {
-    grid-template-rows: 140px 340px 2fr 75px;
-  }
+  
+    body {
+      grid-template-rows: 1fr 500px auto 75px;
+      grid-row-gap: 3px;
+    }
+    
+    .page-text-body {
+      display: flex;
+      flex-direction: column;
+    }
 
-  .page-text-body {
-    -webkit-transform: translateX(2%);
-    transform: translateX(2%);
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-  }
+    .proj-vid {
+      align-self: center;
+      width: 20em;
+    }
 
-  .proj-vid {
-    display: block;
-    width: 20em;
-  }
-
-  .grid-vid-desc {
-    font-size: 10px;
-    display: block;
-  }
+    .proj-vid-desc {
+      text-align: center;
+    }
 }

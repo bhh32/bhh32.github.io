@@ -1,7 +1,3 @@
-body {
-  grid-template-rows: 110px 40px 39em 75px;
-}
-
 @media
   only screen and (min-width: 360px) and (max-width: 600px),
   only screen and (-webkit-min-device-pixel-ratio: 3),
@@ -11,6 +7,5 @@ body {
   only screen and (                min-resolution: 458dpi),
   only screen and (                min-resolution: 3dppx) {
   body {
-    grid-template-rows: 140px 340px 2fr 75px;
+    grid-row-gap: 3px;
   }
-}

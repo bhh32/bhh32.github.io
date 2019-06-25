@@ -8,21 +8,29 @@ body {
     grid-row-gap: 3%;
     grid-column-gap: 3%;
     grid-template-columns: 1fr 1fr 4fr 1fr;
-    grid-template-rows: 110px 40px 60em 75px;
+    grid-template-rows: auto 60em 100px;
     grid-template-areas:
         "gutter-left   header    header      gutter-right"
-        "gutter-left   .         page-title  gutter-right"
         "gutter-left   nav       content     gutter-right"
-        "gutter-left   .         footer      gutter-right";
+        "gutter-left   footer         footer      gutter-right";
 }
 
 header {
     grid-area: header;
+    height: auto;
 }
 
 .headertext {
     display: block;
     float: left;
+}
+
+.header-name {
+    margin-bottom: 2px;
+}
+
+.header-tag {
+    margin-top: 2px;
 }
 
 .header-img {
@@ -48,6 +56,10 @@ header {
     grid-area: content;
     overflow-x: wrap;
     overflow-y: visible;
+}
+
+.page-text, .page-text-head {
+    margin-top: 0px;
 }
 
 footer {
@@ -100,17 +112,23 @@ footer {
   only screen and (                min-resolution: 3dppx) {
     body {
         grid-template-columns: 100%;
-        grid-template-rows: 115px 300px 2fr 100px;
-            grid-template-areas:
-            "header"
-            "nav"
-            "content"
-            "footer";
-        grid-row-gap: 1%;
+        grid-template-rows: 1fr 500px auto 75px;
+        grid-template-areas:
+                            "header"
+                            "nav"
+                            "content"
+                            "footer";
     }
 
     header {
-        font-size: 10px;
+        justify-self: center;
+        align-self: center;
+        font-size: 12px;
+    }
+
+    .headertext {
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     .header-img {
@@ -119,7 +137,6 @@ footer {
 
     .headNav {
         grid-area: nav;
-        display: -ms-grid
         display: grid;
         grid-row-gap: 10px;
         grid-template-rows: repeat(auto-fit, minmax(30px, 75px));
@@ -130,28 +147,21 @@ footer {
         -webkit-box-pack: center;
         justify-content: center;
         align-self: center;
-        justify-self: stretch;
+        justify-self: center;
+    }
+
+    .page-text-head {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     footer {
         grid-area: footer;
-        grid-column: 1 / -1;
         display: -webkit-box;
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         flex-direction: column;
         justify-content: space-around;
-    }
-
-    .footer-text {
-        -webkit-transform: translateX(30%);
-        transform: translateX(30%);
-    }
-
-    .footer-contact {
-        display: inline-block;
-        -webkit-transform: translate(25%, -25%);
-        transform: translate(25%, -25%);
     }
 }

@@ -31,10 +31,17 @@ header, nav, .content {
   color: rgb(0, 150, 200);
 }
 
+.header-tag {
+  font-size: .5em;
+}
+
+.header-img {
+  -webkit-animation: bounce 2.75s ease-in infinite;
+  animation: bounce 2.75s ease-in infinite;
+}
+
 .header-img:hover {
   cursor: pointer;
-  -webkit-animation: bounce 1.25s infinite;
-  animation: bounce 1.25s infinite;
 }
 
 /** Navigation Section **/
@@ -51,6 +58,8 @@ header, nav, .content {
   width: 90%;
   color: rgba(228, 214, 18, 0.63);
   background-color: rgba(1, 100, 133, 0.73);
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);
+  animation: nav 1.25s ease-in-out infinite;
 }
 
 .navlink>p {
@@ -61,6 +70,10 @@ header, nav, .content {
   width: 90%;
   color: rgba(228, 214, 18, 0.63);
   background-color: rgba(1, 100, 133, 0.90);
+}
+
+.active-navlink:hover {
+  animation: none;
 }
 
 .content {
@@ -75,7 +88,10 @@ header, nav, .content {
 footer {
   width: 100%;
   height: auto;
-  border-top: 5px groove red;
+  border-top: 5px groove black;
+  box-shadow: inset 0px 0px 0px -7px black,
+              inset 0px 13px 13px -13px gold,
+              inset 0px 0px 0px -20px orange;
 }
 
 .footer-contact-item {
@@ -88,6 +104,20 @@ footer {
 }
 
 /* Animations */
+@keyframes nav {
+  0% {
+    width: 100%;
+  }
+
+  50% {
+    width: 110%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
 @keyframes bounce {
     0% {
       box-shadow: rgba(0, 0, 0, 0);
@@ -147,4 +177,54 @@ footer {
   100% {
     text-shadow: rgba(0, 0, 0, 0);
   }
+}
+
+
+@media
+  only screen and (max-width: 600px),
+  only screen and (-webkit-min-device-pixel-ratio: 3),
+  only screen and (   min--moz-device-pixel-ratio: 3),
+  only screen and (     -o-min-device-pixel-ratio: 3/1),
+  only screen and (        min-device-pixel-ratio: 3),
+  only screen and (                min-resolution: 458dpi),
+  only screen and (                min-resolution: 3dppx) {
+    .content {
+      text-align: center;
+    }
+    
+    .navlink {
+      width: 65%;
+    }
+    
+    .navlink:hover {
+      width: 65%;
+    }
+    
+    .active-navlink {
+      width: 60%;
+    }
+    
+    footer {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .footer-text, .footer-contact {
+      display: block;
+      align-self: center;
+    }
+    
+    @keyframes nav {
+      0% {
+        width: 65%;
+      }
+
+      50% {
+        width: 75%;
+      }
+
+      100% {
+        width: 65%;
+      }
+    }
 }
