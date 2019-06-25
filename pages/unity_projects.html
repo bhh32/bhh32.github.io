@@ -61,18 +61,18 @@
         </video>
         <p class="proj-vid-desc clean-sec-desc">
           Clean Your Room is a converted project that I started in Unreal Engine 4. I decided to convert it over because it seemed
-          the features that Unity had we're more suited for this type of project. It's target audience is children ages 3 - 11, but it's also fun to play for
+          the features Unity had were more suited for this type of project. Its target audience are children ages 3 - 11, but it's also fun to play for
           adults! I mean, who doesn't like a good explosion and gold stars?!?<br />This is a pet project of mine because it's mainly being developed
           for my 6 (almost 7) year old daughter, and she's enjoyed testing it for me its entire lifetime of development. It can be played either
-          a mouse/keyboard or Xbox controller. The feature allows this is a system that auto detects if you have an Xbox controller connected to your computer. If
-          it detects one, it defaults to the controller. Otherwise the controls are the mouse/keyboard scheme.<br /><br />
+          with a mouse/keyboard or Xbox controller. The feature that allows this is a system that auto detects if you have an Xbox controller connected to your computer. If
+          it detects one, it defaults to the controller. Otherwise, the controls are the mouse/keyboard scheme.<br /><br />
           Other interesting features this game has are as follows:<br />
-          - Camera system that detects if the  player is close enough to a wall the wall becomes transparent so the player can still be seen.<br />
-          - Pickup inheritance: Both types of pickups come from a base pickup script that is then extended by any other pickup objects that have special features.<br/>
-          - Exploding Pickups: The exploding pickups spawn more base pickups that are then added into the achievement system as to how many pickups need to be collected
-          before getting the next achievement.<br />
-          - Achievement System: This is created to populate the star UI as the player collects more pickups, it's recalculated when the user hits an
-          exploding pickup. However, if an achievement is earned it isn't taken away just because an exploding pickup was hit.<br />
+          - Camera system that detects player to wall distance, making the wall transparent when the camera side of the player is at a certain distance.<br />
+          - Pickup inheritance: Both types of pickups come from a base pickup class that is then inherited by any other pickup objects; adding their special features.<br/>
+          - Exploding Pickups: When exploding pickups explode they scatter a random number of new basic pickups across the floor. These new basic pickups are then added into the achievement system calculation on how 
+            many are needed to reach the next achievement.<br />
+          - Achievement System: This is created to populate the star UI as the player collects pickups. If an achievement is earned it isn't taken away just because a recalculation due an exploded pickup.<br />
+            Download and play it here:<br />
           <a href="https://drive.google.com/file/d/1PUeXNMUjiEhHuLLDlYOy6GwsQxQJJ0SZ/view?usp=sharing">Clean Your Room - Windows</a><br />
         </p>
         <video class="proj-vid indy-sec-vid" controls>
