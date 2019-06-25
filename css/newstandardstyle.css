@@ -88,7 +88,7 @@ header, nav, .content {
 footer {
   width: 100%;
   height: auto;
-  border-top: 5px groove black;
+  border-top: 5px groove orange;
   box-shadow: inset 0px 0px 0px -7px black,
               inset 0px 13px 13px -13px gold,
               inset 0px 0px 0px -20px orange;
@@ -105,6 +105,34 @@ footer {
 
 /* Animations */
 @keyframes nav {
+  0% {
+    width: 100%;
+  }
+
+  50% {
+    width: 110%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes nav {
+  0% {
+    width: 100%;
+  }
+
+  50% {
+    width: 110%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@-moz-keyframes nav {
   0% {
     width: 100%;
   }
@@ -148,6 +176,20 @@ footer {
   }
 }
 
+@-moz-keyframes bounce {
+  0% {
+    box-shadow: rgba(0, 0, 0, 0);
+  }
+
+  50% {
+    box-shadow: black 5px 5px 8px,
+                black 0px 0px 10px;
+  }
+
+  100% {
+    box-shadow: rgba(0, 0, 0, 0);
+  }
+}
 
 @keyframes blast {
     0% {
@@ -179,6 +221,20 @@ footer {
   }
 }
 
+@-moz-keyframes blast {
+  0% {
+    text-shadow: rgba(0, 0, 0, 0);
+  }
+
+  50% {
+    text-shadow: gold 5px 5px 8px,
+                orange 0px 0px 10px;
+  }
+
+  100% {
+    text-shadow: rgba(0, 0, 0, 0);
+  }
+}
 
 @media
   only screen and (max-width: 600px),
@@ -215,6 +271,34 @@ footer {
     }
     
     @keyframes nav {
+      0% {
+        width: 65%;
+      }
+
+      50% {
+        width: 75%;
+      }
+
+      100% {
+        width: 65%;
+      }
+    }
+
+    @-moz-keyframes nav {
+      0% {
+        width: 65%;
+      }
+
+      50% {
+        width: 75%;
+      }
+
+      100% {
+        width: 65%;
+      }
+    }
+
+    @-webkit-keyframes nav {
       0% {
         width: 65%;
       }
