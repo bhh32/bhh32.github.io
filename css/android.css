@@ -9,6 +9,11 @@
     grid-column: 1 / 1;
     display: inline-block;
     width: 30em;
+    justify-self: center;
+}
+
+.whoPays-vid {
+  width: 16em;
 }
 
 .proj-vid-desc {
@@ -41,6 +46,11 @@
       align-self: center;
       width: auto;
       height: 40em;
+    }
+
+    .cosmic-vid {
+      width: 23em;
+      height: auto;
     }
 
     .proj-vid-desc {
