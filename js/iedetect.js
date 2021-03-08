@@ -1,5 +1,5 @@
 // Internet Explorer 6-11
-var isIE = /*@cc_on!@*/false || !!document.documentMode;
+var isIE = false || !!document.documentMode;
 
 if (isIE) {
   window.alert("This page is not supported by Internet Explorer and may not display properly.\n\n"
